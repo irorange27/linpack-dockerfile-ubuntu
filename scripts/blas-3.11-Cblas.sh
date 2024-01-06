@@ -1,6 +1,6 @@
 wget http://www.netlib.org/blas/blas-3.11.0.tgz
 tar -xzf blas-3.11.0.tgz ; cd BLAS-3.11.0
-make
+make -j
 ar rv libblas.a *.o
 cd ..
 

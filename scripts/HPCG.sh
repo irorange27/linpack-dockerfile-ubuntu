@@ -6,5 +6,5 @@ sed -i 's#CXX          = mpicxx#CXX          = /usr/local/bin/mpicxx#g' setup/Ma
 mkdir build ; cd build
 ../configure Linux_MPI
 ../configure Linux_MPI
-make
+make 
 mpirun -np 8 bin/xhpcg

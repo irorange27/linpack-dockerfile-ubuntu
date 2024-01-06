@@ -13,6 +13,6 @@ sed -i 's#LAlib        = \$(LAdir)/libcblas.a \$(LAdir)/libatlas.a#LAlib        
 sed -i 's#CC           = /usr/bin/gcc#CC           = /usr/local/bin/mpicc#g' Make.Linux_PII_CBLAS
 sed -i 's#LINKER       = /usr/bin/g77#LINKER       = /usr/local/bin/mpif77#g' Make.Linux_PII_CBLAS
 
-make arch=Linux_PII_CBLAS
+make -j arch=Linux_PII_CBLAS
 cd bin/Linux_PII_CBLAS
-mpirun -np 4 ./xhpl > HPL-Benchmark.txt
+# mpirun -np 4 ./xhpl > HPL-Benchmark.txt
